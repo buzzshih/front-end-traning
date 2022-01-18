@@ -1,11 +1,9 @@
 .container{
-    background-color: #494748;
+    /* background-color: #494748; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 body{
@@ -13,73 +11,62 @@ body{
     flex-direction: column;
 }
 
-.container div{
-    padding: 5px  25px;
-    /* padding: auto; */
-    text-align: center;
-    color: #d5d0d1;
-    font-size: 0.8em;
-    font-family:Microsoft JhengHei;
+header{
+    background-color: #494748;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
-.container div:hover{
+h1{
+    margin: 0px;
+    font-size: 20px;
+    color: #cdcdcd;
+}
+
+
+
+.menu:hover{
     color: #FFFFFF;
 }
 
+.menu:focus{
+    color: #FFFFFF;
+}
+
+
 .menu{
     text-align: center;
-    /* color: #FFFFFF; */
+    color: #d5d0d1;
+    font-size: 0.8em;    
+    text-transform:capitalize;
+    font-family:Microsoft JhengHei;
+    padding: 5px  25px;
+    cursor: pointer;
+    
 }
-
-
-.container div:nth-of-type(1){
-   font-size: 1em;
-   font-weight: bold;
-   letter-spacing: 0.25em;
-
-}
-
-/* .container div:last-child{
-     position: relative;
-} */
 
 #shoppingCart{
     position: relative;
 }
 
 #quantity{
-    font-size: 1em;
-    left: 0;
+    /* margin: 0%; */
+    font-size: 0.01em;
+    left: 0px;
     position: absolute;
     text-align: center;
-    top: 0;
-    width: 100%;
+    top: 10px;
+    width: 100%; 
     color: #000000;
 }
-
-
-/* #banner{
-  background-image: url("./image/banner.jpg");
-  background-size: contain ;
-  width: 100%;
-  height: 605px;
-} */
-
-/* #bannerSlogan{
-    display:flex;
-    background-color: #e1e1e1;
-    text-align:center;
-    color: #000000;
-    letter-spacing: 0.2em;
-    padding: 10px;
-    font-size: 0.5em;
-} */
 
 .banner{
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
+    text-transform: uppercase;
 }
 
  #bannerCaption{
@@ -129,14 +116,28 @@ h1{
 
 
 .subSlogan{
-    /* background-color: red; */
     display: block;
     margin: 20px;
-}
-
-.subSlogan p:last-child{
     letter-spacing: 5px;
 }
+
+.subSlogan p{
+     margin-bottom: 0%;
+}
+
+#subSlogan1{
+    font-size: 2.2em;
+    text-transform: uppercase;
+
+}
+
+#subSlogan2{
+    font-size: 1em;
+    text-transform: capitalize;
+
+}
+
+
 
 .productBanner{
     display: flex;
@@ -146,29 +147,30 @@ h1{
 .productBanner div img{
     margin: 10px 5px;
     height: 200px;
-  
 }
 
 
-
+footer{
+    margin-top: 10px;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    background-color: #303132;
+    color: #FFFFFF;
+    font-size: 13px;
+}
 
 .footer{
-    background-color: #303132;
-    height: 130px;
-    text-align: center;
-    color: #FFFFFF;
-    letter-spacing: 0.1em;
-    font-size: 13px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
+    letter-spacing: 0.1em;
 }
-
-
 
 .connected{
     display: inline-block;
     margin: 13px 40px;
+    text-transform:uppercase;
+    color: #cdcdcd;
 }
  
 .connected ul{
@@ -212,15 +214,15 @@ h1{
 .information{
     display: block;
     margin-top: 10px; 
+    text-transform: lowercase;
+    color: #FFFFFF;
 }
 
-#footerbar{
-    margin: 0px;
-    padding-bottom: 10px;
-    color: #FFFFFF;
-    background-color: #303132;
+footer #footerbar{
+    margin-top: 0px;
     font-size: 0.8em;
 }
+
 #footerbar a{
     color: #FFFFFF;
 }
@@ -236,6 +238,9 @@ h1{
     letter-spacing: 10px;
     margin: 0px;
 }
+
+
+
 
 
 
