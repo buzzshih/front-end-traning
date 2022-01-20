@@ -1,9 +1,6 @@
-.container{
-    /* background-color: #494748; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+html,body{
+    height: 100%;
+    margin: 0px;
 }
 
 body{
@@ -15,25 +12,35 @@ header{
     background-color: #494748;
     display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    width: 100%;
+    padding: 0.5% 0;
+
+}
+
+main{
+    flex-grow: 1;
 }
 
 h1{
-    margin: 0px;
-    font-size: 20px;
-    color: #cdcdcd;
+ margin: 0px;
+ font-size: 20px;
+ color: #cdcdcd;
+ text-transform: uppercase;
+ width: 100%;
+ margin-right: 30px;
+ letter-spacing: 5px;
+}
+
+h1,p,div{
+    text-align: center;
 }
 
 
 
-.menu:hover{
-    color: #FFFFFF;
+.container {
+    display: flex;
 }
-
-.menu:focus{
-    color: #FFFFFF;
-}
-
 
 .menu{
     text-align: center;
@@ -41,9 +48,17 @@ h1{
     font-size: 0.8em;    
     text-transform:capitalize;
     font-family:Microsoft JhengHei;
-    padding: 5px  25px;
     cursor: pointer;
-    
+    margin-right:  30px;
+}
+
+
+.menu:hover{
+    color: #FFFFFF;
+}
+
+.menuFoucs:focus{
+    color: #FFFFFF;
 }
 
 #shoppingCart{
@@ -60,13 +75,14 @@ h1{
     width: 100%; 
     color: #000000;
 }
-
 .banner{
-    position: relative;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     text-transform: uppercase;
+}
+
+.bannerImg{
+    display: flex;
+    position: relative;
 }
 
  #bannerCaption{
@@ -75,10 +91,10 @@ h1{
     color: #000000;
     text-align: center;
     padding: 20px 30px;
-    left: 37%;
-    top: 80px; 
-    /* word-wrap:break-word; */
-    /* white-space:pre; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
 }
 
 #bannerCaption strong {
@@ -100,144 +116,164 @@ h1{
 #bannerText{
     background-color:#e1e1e1 ;
     text-align: center;
+    color: #4e4d4d;
     padding: 10px;
     font-size: 0.5em;
     letter-spacing: 3px;
+    flex-grow: 1;
+    margin-bottom:  20px; ;
 }
 
-h1,p,div{
-    text-align: center;
-}
 
-h1{
-    margin-bottom: 0px;
-    letter-spacing: 5px;
-}
 
 
 .subSlogan{
-    display: block;
-    margin: 20px;
     letter-spacing: 5px;
+    padding:0 40%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .subSlogan p{
-     margin-bottom: 0%;
+     margin: 0%;
+     margin-bottom:10px ;
 }
 
-#subSlogan1{
+.subSlogan #subSlogan1{
     font-size: 2.2em;
     text-transform: uppercase;
-
 }
 
-#subSlogan2{
+.subSlogan #subSlogan2{
     font-size: 1em;
     text-transform: capitalize;
-
 }
-
-
 
 .productBanner{
     display: flex;
     justify-content:center;
+    padding: 0 35%;
 }
 
 .productBanner div img{
-    margin: 10px 5px;
-    height: 200px;
-}
-
-
-footer{
-    margin-top: 10px;
-    position: absolute; 
-    bottom: 0; 
-    width: 100%;
-    background-color: #303132;
-    color: #FFFFFF;
-    font-size: 13px;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;    
-    letter-spacing: 0.1em;
-}
-
-.connected{
-    display: inline-block;
-    margin: 13px 40px;
-    text-transform:uppercase;
-    color: #cdcdcd;
-}
- 
-.connected ul{
-    padding: 0px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.connected img{
-    height: 18px;
-    width: 18px;
-}
-
-.subscribe input,button{
-    display: block;
-    margin: 13px 0px;
-    border: none;
-}
-
-.subscribe input{
-    width: 250px;
-    height: 20px;
-    background-color: #494748;
-    padding:2px 5px ;
-    color: #d5d0d1;
-
-}
-
-.subscribe input::placeholder{
-    color: #d5d0d1;
-}
-
-.subscribe button{
-    width: 260px;
-    height: 30px;
-    background-color: #e1efefe1;
-    color: #494748 ;
-}
-
-.information{
-    display: block;
-    margin-top: 10px; 
-    text-transform: lowercase;
-    color: #FFFFFF;
-}
-
-footer #footerbar{
-    margin-top: 0px;
-    font-size: 0.8em;
-}
-
-#footerbar a{
-    color: #FFFFFF;
+    margin-right: 5px; ;
+    height: 250px;
 }
 
 #sale{
-    position: absolute; 
+    position:absolute;
     top: 20%;
-    left: 30px;
+    left: 50%;
+    transform: translate(-50% ,-20%);
 }
 
 #sale p{
     font-size: 25px;
     letter-spacing: 10px;
     margin: 0px;
+} 
+
+
+
+.footer{
+    background-color: #303132;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 1% 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    letter-spacing: 0.1em;
+
 }
+
+
+.footerContentDiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform:uppercase;
+}
+
+
+.footerSubTitle{
+    margin-bottom: 10px;
+}
+
+.socialMediaIcon{
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+.socialMediaIcon img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.subscribe input,button{
+    display: block;
+    padding: 0px;
+    margin-bottom: 13px;
+    border: none;
+}
+
+.subscribe input{
+    width: 260px;
+    height: 25px;
+    background-color: #494748;
+    color: #d5d0d1;
+}
+.subscribe input::placeholder{
+    color: #d5d0d1;
+    padding-left: 10px;
+}
+.subscribe button{
+    width: 260px;
+    height: 30px;
+    background-color: #e1efefe1;
+    color: #494748 ;
+} 
+
+.information{
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+
+
+
+#footerbar a{
+    color: #FFFFFF;
+} 
+
+footer #footerbar{
+    margin: 0px;
+    padding: 1% 0%;
+    font-size: 0.8em;
+}
+
+
+
+
+/* 
+i
+} 
+
+
+
+
+
+
 
 
 

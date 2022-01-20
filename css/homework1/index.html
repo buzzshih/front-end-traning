@@ -10,92 +10,112 @@
 </head>
 <body>
     <header>
-        <div><h1>PRETTY GAL</h1> </div>
+        <div class="title"><h1>pretty gal</h1> </div>
         <nav class="container">
-            <div class="menu" tabindex="1"><p>home</p> </div>
-            <div class="menu" tabindex="1"><p>Shop</p></div>
-            <div class="menu" tabindex="1"><p>Sale</p></div>
-            <div class="menu" tabindex="1"><p>Customer Care</p></div>
-            <div class="menu" tabindex="1"><p>Stockists</p></div>
+            <div class="menu menuFoucs " tabindex="1">home</div>
+            <div class="menu menuFoucs " tabindex="1">shop</div>
+            <div class="menu menuFoucs " tabindex="1">customer care</div>
+            <div class="menu menuFoucs " tabindex="1">sale</div>
+            <div class="menu menuFoucs " tabindex="1">Stockists</div>
         </nav>
         <div id="shoppingCart"> 
             <img src="./image/shop.jpg" alt="shop icon" >
             <p id="quantity">0</p>
         </div>
     </header>
-    <main>
+
+
+    <main >
+
         <figure  class="banner">
-            <img   src="./image/banner.jpg" alt="banner image"  width="100%" height="300px">
-            <figcaption id="bannerCaption"> 
-                <strong >fall & winter</strong> 
-                <span>Shop Now</span>
-            </figcaption>
-            <figcaption id="bannerText" >free shipping worlwide</figcaption>
+            <div class="bannerImg">
+                <img  src="./image/banner.jpg" alt="banner image"  width="100%" height="300px">
+                <figcaption  id="bannerCaption"> 
+                    <strong >fall & winter</strong> 
+                    <span>Shop Now</span>
+                </figcaption>
+            </div>
+            <div id="bannerText">
+                <figcaption>free shipping worlwide</figcaption>
+            </div>
+            
         </figure> 
-        <article class="subSlogan">
-            <div>
+
+        <article>
+            <div class="subSlogan">
                 <p id="subSlogan1">year round<p>
                 <p>⎯</p>
                 <p class="capitalize" id="subSlogan2">must have items</p>
             </div>
         </article>
-        <article class="productBanner">
-            <div>
-                <img src="./image/rack01.jpg" alt="rack01">
-            </div>
-            <div style="position: relative;">
-                <img src="./image/rack02.jpg" alt="rack02">
-                <div id="sale" >
-                    <p>SALE</p>
+
+        <article>
+            <div class="productBanner">
+                <div>
+                    <img src="./image/rack01.jpg" alt="rack01">
+                </div>
+                <div style="position: relative;">
+                    <img src="./image/rack02.jpg" alt="rack02">
+                    <div id="sale" >
+                        <p>SALE</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./image/rack03.jpg" alt="rack03">
                 </div>
             </div>
-            <div>
-                <img src="./image/rack03.jpg" alt="rack03">
-            </div>
         </article>
+
     </main>
     
    
     <footer>
         <div class="footer">
-               <span class="connected">stay connected
-               <ul  >
-                   <li> 
-                        <a href="https://www.facebook.com/wix" target="_blank"> 
-                        <img src="./image/fb-icon.webp" alt="fb-icon" >
-                        </a> 
-                    </li>
-                   <li>
-                       <a href="https://twitter.com/wix" target="_blank">
-                        <img src="./image/twitter-icon.webp" alt="twitter-icon" >
-                       </a>
-                   </li>
-                   <li>
-                       <a href="https://www.pinterest.com/wixcom/" target="_blank">
-                        <img src="./image/pinterest-icon.webp" alt="pinterest-icon" >
-                       </a>
-                    </li>
-                   <li>
-                       <a href="https://www.instagram.com/wix/" target="_blank">
-                           <img src="./image/ig-icon.webp" alt="ig-icon" >
-                       </a>
-                    </li>
-                </ul>
-            </span>
-            
-           <span class="connected">be our friend
-               <form action="" method="get">
-                   <div class="subscribe">
-                    <input  type="email" placeholder="EmailAddress" name="email">
-                    <button type="submit" >Subscribe Now</button>
-                   </div>
-               </form>
-           </span>
-           <span class="connected">need assistance?
-               <span class="information">123-456-7890 <br>info@mysite.com</span>
-           </span>
-        </div>
-        <p id="footerbar"> <span>Ⓒ</span> 2023 by PRETTY GAL. Proudly created with <a href="https://zh.wix.com/?utm_campaign=vir_created_with" target="_blank" >Wix.com</a></p>      
+            <div class="footerContentDiv">
+                <div class="footerContent">
+                    <div class="footerSubTitle">stay connected</div> 
+                    <ul class="socialMediaIcon">
+                        <li> 
+                            <a href="https://www.facebook.com/wix" target="_blank"> 
+                            <img src="./image/fb-icon.webp" alt="fb-icon" >
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/wix" target="_blank">
+                            <img src="./image/twitter-icon.webp" alt="twitter-icon" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/wixcom/" target="_blank">
+                            <img src="./image/pinterest-icon.webp" alt="pinterest-icon" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/wix/" target="_blank">
+                                <img src="./image/ig-icon.webp" alt="ig-icon" >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             
+                <div  class="footerContent">
+                    <div class="footerSubTitle" >be our friend</div> 
+                    <form action="" method="get">
+                        <div class="subscribe">
+                            <input  type="email" placeholder="EmailAddress" name="email">
+                            <button  type="submit" >Subscribe Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footerContent" >
+                    <div class="footerSubTitle" >need assistance?</div> 
+                    <div class="information">123-456-7890 <br>info@mysite.com</div>
+                </div>
+            </div>
+            <div>
+                <p id="footerbar"> <span>Ⓒ</span> 2023 by PRETTY GAL. Proudly created with <a href="https://zh.wix.com/?utm_campaign=vir_created_with" target="_blank" >Wix.com</a></p>
+            </div>      
+        </div>     
     </footer>
 </body>
 </html>
