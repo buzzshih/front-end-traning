@@ -57,9 +57,10 @@ h1,p,div{
     color: #FFFFFF;
 }
 
-.menuFoucs:focus{
+.active {
     color: #FFFFFF;
 }
+
 
 #shoppingCart{
     position: relative;
