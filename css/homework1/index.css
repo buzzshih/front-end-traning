@@ -20,27 +20,32 @@ header{
 
 main{
     flex-grow: 1;
+    padding-bottom:20px ;
 }
 
 h1{
  margin: 0px;
  font-size: 20px;
- color: #cdcdcd;
- text-transform: uppercase;
- width: 100%;
- margin-right: 30px;
- letter-spacing: 5px;
 }
 
 h1,p,div{
     text-align: center;
 }
 
+.title{
+    color: #cdcdcd;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 30px;
+}
+
 
 
 .container {
     display: flex;
+    margin-right: 30px;
 }
+
 
 .menu{
     text-align: center;
@@ -50,6 +55,10 @@ h1,p,div{
     font-family:Microsoft JhengHei;
     cursor: pointer;
     margin-right:  30px;
+}
+
+.menu:last-child{
+    margin-right: 0;
 }
 
 
@@ -79,12 +88,20 @@ h1,p,div{
 .banner{
     margin: 0;
     text-transform: uppercase;
+    margin-bottom:  20px; ;
 }
 
 .bannerImg{
     display: flex;
     position: relative;
+    background-image: url("./image/banner.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 300px;
 }
+
+
+
 
  #bannerCaption{
     background-color:rgba(255, 255, 255, 0.39);
@@ -122,7 +139,6 @@ h1,p,div{
     font-size: 0.5em;
     letter-spacing: 3px;
     flex-grow: 1;
-    margin-bottom:  20px; ;
 }
 
 
@@ -137,10 +153,13 @@ h1,p,div{
     justify-content: center;
 
 }
-
 .subSlogan p{
      margin: 0%;
      margin-bottom:10px ;
+}
+
+.subSlogan p:last-child{
+    margin-bottom: 0;
 }
 
 .subSlogan #subSlogan1{
@@ -159,10 +178,27 @@ h1,p,div{
     padding: 0 35%;
 }
 
-.productBanner div img{
-    margin-right: 5px; ;
+.productBanner .productImg img{ 
     height: 250px;
 }
+
+.productBanner .productImg { 
+    position: relative;
+    margin-right: 5px;
+}
+
+
+.productBanner div:last-child{
+    margin-right: 0%;
+}
+
+
+
+
+
+
+
+
 
 #sale{
     position:absolute;
@@ -188,7 +224,6 @@ h1,p,div{
     flex-direction: column;
     justify-content: center;    
     letter-spacing: 0.1em;
-
 }
 
 
@@ -250,9 +285,6 @@ h1,p,div{
     color: #FFFFFF;
 }
 
-
-
-
 #footerbar a{
     color: #FFFFFF;
 } 
@@ -261,13 +293,6 @@ footer #footerbar{
     margin: 0px;
     padding: 1% 0%;
     font-size: 0.8em;
-}
-
-
-
-
-/* 
-i
 } 
 
 
