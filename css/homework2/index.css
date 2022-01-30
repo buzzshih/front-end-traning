@@ -65,10 +65,13 @@ img{
 .shoppingCart {
     position: relative;
     font-size: 13px;
+   
 }
 
 .shoppingCart img{
    margin: 0px;
+   width: 24px;
+   height: 30px;
 }
 
 .shoppingCart #quantity{
@@ -79,6 +82,9 @@ img{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    /* left:12px ;
+    top: 15px; */
+   
  }
 
 
@@ -184,6 +190,7 @@ flex-grow: 1;
     flex-direction: column;
     width: 100%;
     flex-grow: 1;
+    margin-right: 0px;
 }
 
 .productVarietyName{
@@ -243,11 +250,11 @@ flex-grow: 1;
   margin-bottom: 10px;
 }
 
-.info .infoContent div{
+.info .infoContent .infoContents{
     margin-bottom: 5px;
 }
 
-.info .infoContent div:last-child{
+.info .infoContent .infoContents:last-child{
     margin-bottom: 0px;
 }
 
@@ -259,11 +266,11 @@ flex-grow: 1;
 
 } 
 
-.payment div{
+.payment .payments{
    margin-bottom: 15px;
 }
 
-.payment div:last-child{
+.payment .payments:last-child{
     margin-bottom: 0px;
  }
 
@@ -271,36 +278,42 @@ flex-grow: 1;
     display: flex; 
 }
 
-.payment .paymentIcon  li{
+.payment .paymentIcon  .paymentIcons{
     margin-right: 10px;
 }
 
-.payment .paymentIcon  li:last-child{
+.payment .paymentIcon  .paymentIcons:last-child{
     margin-right: 0px;
 }
 
-.subscribe input,button{
+.subscribe  .input{
     display: block;
     padding: 0px;
     margin-bottom: 13px;
     border: none;
 }
 
-.subscribe input{
-    width: 300px;
+.subscribe  .input:last-child{
+    margin-bottom: 0px;
+}
+
+.subscribe .email{
+    /* width: 300px; */
+    width: 100%;
     height: 30px;
     background-color: #d0d0d0;
     color: #d5d0d1;
 }
 
-.subscribe input::placeholder{
+.subscribe .email::placeholder{
    color: #4f5555;
    text-transform: capitalize;
    padding-left: 10px;
 }
 
-.subscribe button{
-    width: 300px;
+.subscribe .button{
+    /* width: 300px; */
+    width: 100%;
     height: 30px;
     background-color: #38484d;
     color: #d5d0d1;
@@ -314,16 +327,18 @@ flex-grow: 1;
 
 
 
-.info .infoIcon li{
+
+
+.info .infoIcon  .infoIcons{
     margin-right: 30px;
 }
 
-.info .infoIcon li:last-child{
+.info .infoIcon .infoIcons:last-child{
     margin-right: 0px;
 }
 
 
-.info .infoIcon li img{
+.info .infoIcon .infoIcons .infoIconImg{
     width: 18px;
     height: 18px;
 }
@@ -342,3 +357,19 @@ flex-grow: 1;
 }
 
 
+.order1{
+    order: -1;
+}
+
+.order2{
+    order: 0;
+}
+
+.order3{
+    order: 1;
+}
+
+
+.form{
+   width: 300px;
+}
